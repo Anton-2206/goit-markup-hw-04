@@ -1,0 +1,367 @@
+:root {
+    --color-blue: #2196F3;
+    --color-grey: #757575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* -----------header----------- */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo-blue {
+    color: #2196F3;
+}
+
+.header-navigation {
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.header-nav-link {
+    color: #212121;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: var(--color-blue);
+}
+
+.header-nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contact {
+    display: flex;
+    gap: 50px;
+}
+
+.header-contact-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-grey);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+    color: var(--color-blue);
+}
+
+.current {
+    color: var(--color-blue);
+}
+
+/* ---------hero--------- */
+.hero {
+    background-image: url(../images/main/background.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 696px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    background: var(--color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    min-width: 216px;
+    height: 50px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
+/* -------perevagy------- */
+.perevagy {
+    padding-top: 94px;
+}
+
+.perevagy-list {
+    display: flex;
+    gap: 30px;
+}
+
+.perevagy-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.perevagy-about {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-grey);
+}
+
+/* ------------about------------- */
+.about {
+    display: flex;
+}
+
+.about-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+/* -----------team------------ */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team-about {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-grey);
+    text-align: center;
+}
+
+/* ---------footer------ */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-list {
+    gap: 9px;
+}
+
+.footer-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-contact-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+    color: var(--color-blue);
+}
+
+/* ----------portfolio---------- */
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border: none;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
+.filter-btn-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #FFFFFF;
+    background-color: var(--color-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.filter-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.filter-box {
+    border: #EEEEEE solid 1px;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+.filter-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.filter-about {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-grey);
+}
