@@ -113,18 +113,38 @@ body {
     gap: 50px;
 }
 
+.header-contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
 .header-contact-link {
-    display: block;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-grey);
+    
 }
 
 .header-contact-link:hover,
 .header-contact-link:focus {
     color: var(--color-blue);
+}
+
+.header-contact-link:hover .header-icon,
+.header-contact-link:focus .header-icon {
+    fill: var(--color-blue);
+}
+.header-icon{
+    fill: var(--color-grey);
+    margin-right: 10px;
 }
 
 .current {
@@ -135,15 +155,14 @@ body {
 
 
 .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
         url(../images/main/background.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     background-position: center;
-width: 1600px;
-margin: 0 auto;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -190,6 +209,19 @@ margin: 0 auto;
     gap: 30px;
 }
 
+.perevagy-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+
 .perevagy-title {
     font-weight: 700;
     font-size: 14px;
@@ -200,6 +232,7 @@ margin: 0 auto;
 }
 
 .perevagy-about {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -243,13 +276,13 @@ margin: 0 auto;
     text-align: center;
 }
 
-.team-list-item{
-background: #FFFFFF;
+.team-list-item {
+    background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-box{
+.team-box {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -294,61 +327,66 @@ background: #FFFFFF;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 50%;
 }
 
 .team-soc-link:hover {
-background-color: green;
+    background-color: #2196F3;
 }
 
-.team-soc-link:hover .team-soc-icon{
-    fill: red;
+.team-soc-link:hover .team-soc-icon {
+    fill: #FFFFFF;
 }
 
-.team-soc-icon{
+.team-soc-icon {
     fill: #AFB1B8;
 }
+
 /* ------------clients----------- */
-.clients-title{
+.clients-title {
     font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #212121;
-        margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
 }
 
-.clients-list{
+.clients-list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.clients-item{
+
+.clients-item {
     display: flex;
     justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
-        border-radius: 4px;
+    border-radius: 4px;
 }
-.clients-link{
+
+.clients-link {
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
-.clients-item:hover{
-    border: 1px solid red;}
-
-.clients-item:hover .clients-icon{
-    fill: red;
+.clients-item:hover {
+    border: 1px solid #2196F3;
 }
-.clients-icon{
-    fill: #757575;
+
+.clients-item:hover .clients-icon {
+    fill: #2196F3;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
 }
 
 /* ---------footer------ */
@@ -362,6 +400,7 @@ background-color: green;
 }
 
 .footer-logo {
+    display: block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -369,6 +408,7 @@ background-color: green;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .footer-list {
